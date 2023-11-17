@@ -12,7 +12,9 @@ app.use(morgan('combined'))
 app.use(helmet())
 app.use(compression())
 //init db
-
+require('./bds/init.mongodb')
+const {countConnect} = require('./heplers/check.connect')
+countConnect()
 //init routes
 
 app.get('/', (req, res, next) => {
