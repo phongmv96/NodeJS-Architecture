@@ -962,6 +962,11 @@ optionator@^0.9.3:
     prelude-ls "^1.2.1"
     type-check "^0.4.0"
 
+os@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/os/-/os-0.1.2.tgz#f29a50c62908516ba42652de42f7038600cadbc2"
+  integrity sha512-ZoXJkvAnljwvc56MbvhtKVWmSkzV712k42Is2mA0+0KTSRakq5XXuXpjZjgAt9ctzl51ojhQWakQQpmOvXWfjQ==
+
 p-limit@^3.0.2:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-3.1.0.tgz#e1daccbe78d0d1388ca18c64fea38e3e57e3706b"
@@ -1012,6 +1017,16 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+prettier@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.0.tgz#c6d16474a5f764ea1a4a373c593b779697744d5e"
+  integrity sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==
+
+process@^0.11.10:
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
 proxy-addr@~2.0.7:
   version "2.0.7"

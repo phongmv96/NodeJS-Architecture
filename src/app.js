@@ -1,31 +1,31 @@
-const express = require('express')
-const app = express()
-const morgan = require('morgan')
+const express = require("express");
+const app = express();
+const morgan = require("morgan");
 const helmet = require("helmet");
-const compression = require('compression')
+const compression = require("compression");
 //init middlewares
-// app.use(morgan('dev'))
-app.use(morgan('combined'))
+app.use(morgan("dev"));
+// app.use(morgan("combined"));
 // app.use(morgan('common'))
 // app.use(morgan('short'))
 // app.use(morgan('tiny'))
-app.use(helmet())
-app.use(compression())
+app.use(helmet());
+app.use(compression());
 //init db
-require('./bds/init.mongodb')
-const {countConnect} = require('./heplers/check.connect')
-countConnect()
+require("./bds/init.mongodb");
+const { checkOverload } = require("./heplers/check.connect");
+checkOverload();
 //init routes
 
-app.get('/', (req, res, next) => {
-  const strCompression = 'Hello Phong'
+app.get("/", (req, res, next) => {
+  const strCompression = "Hello Phong";
   return res.status(500).json({
-    message: 'Welcome Jin dev!',
+    message: "Welcome Jin dev!",
     metadata: strCompression.repeat(10000)
-  })
-})
+  });
+});
 
 //handling error
 
-module.exports = app
+module.exports = app;
 
